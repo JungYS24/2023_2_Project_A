@@ -27,3 +27,6 @@ public class GenericContainer : MonoBehaviour
     }
 }
 
+public class T
+{
+}

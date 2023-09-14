@@ -45,5 +45,22 @@ public class GenericContainerExample : MonoBehaviour
         }
         Debug.Log(temp);
     }
+
+    private class GenericContainer<T>
+    {
+        public GenericContainer(int v)
+        {
+        }
+
+        internal void Add(int v)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        internal T[] GetItem()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 }
 
