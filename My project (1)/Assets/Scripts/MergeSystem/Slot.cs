@@ -28,7 +28,7 @@ public class Slot : MonoBehaviour
     public void CreateItem (int id)
     {
         string itemPath = "Prefabs/Item_" + id.ToString("000");
-        var itemGO = (GameObject)Instantiate(Resources.Load(itemPath));
+        var itemGO = (GameObject)Instantiate (Resources.Load(itemPath));
 
         itemGO.transform.SetParent(this.transform);
         itemGO.transform.localPosition = Vector3.zero;
