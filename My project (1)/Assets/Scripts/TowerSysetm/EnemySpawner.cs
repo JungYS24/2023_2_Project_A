@@ -17,13 +17,13 @@ public class EnemySpawner : MonoBehaviour
     {
         spawnCounter = timeBetweenSpawns;
     }
-
+    
     void Update()
     {
-        if (amountToSpawn > 0) //남아있는 스폰될 숫자가 있을때
+        if(amountToSpawn  > 0 ) //남아있는 스폰될 숫자가 있을때
         {
             spawnCounter -= Time.deltaTime;     //프레임마다 시간을 감소 시킴
-            if (spawnCounter <= 0)               //spawnCount 0이하일때
+            if(spawnCounter <= 0)               //spawnCount 0이하일때
             {
                 spawnCounter = timeBetweenSpawns;       //정해진 스폰 사이 간격 시간을 다시 리셋 
                 //Random.Range(0, enemiesToSpawn.Length) 배열안의 랜덤값 정해서 프리팹을 생성 , 위치랑 로테이션 값
